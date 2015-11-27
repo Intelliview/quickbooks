@@ -1,6 +1,6 @@
 <?php
 
-namespace ActiveCollab\Quickbooks\Http;
+namespace Intelliview\Quickbooks\Http;
 
 
 interface HttpRequesterInterface

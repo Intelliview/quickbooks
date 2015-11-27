@@ -1,8 +1,8 @@
 <?php
 
-namespace ActiveCollab\Quickbooks;
+namespace Intelliview\Quickbooks;
 
-use ActiveCollab\Quickbooks\OAuth\OAuthInterface;
+use Intelliview\Quickbooks\OAuth\OAuthInterface;
 
 class Authenticator
 {

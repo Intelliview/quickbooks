@@ -9,13 +9,13 @@ class HttpClientTest extends TestCase
         $mockedClient = new Guzzle\Http\Client();
         $mockedClient->addSubscriber($plugin);
 
-        $requester = new \ActiveCollab\Quickbooks\Http\HttpRequester($mockedClient);
+        $requester = new \Intelliview\Quickbooks\Http\HttpRequester($mockedClient);
         $response = $requester->request('GET', 'http://mock.com',null,[]);
 
         $this->assertArray($response);
     }
 
-    /** @expectedException \ActiveCollab\Quickbooks\Exception\ApiRequestException */
+    /** @expectedException \Intelliview\Quickbooks\Exception\ApiRequestException */
     public function testThrowExceptionWhenResponseCodeNot200()
     {
         $plugin = new Guzzle\Plugin\Mock\MockPlugin();
@@ -23,7 +23,7 @@ class HttpClientTest extends TestCase
         $mockedClient = new Guzzle\Http\Client();
         $mockedClient->addSubscriber($plugin);
 
-        $requester = new \ActiveCollab\Quickbooks\Http\HttpRequester($mockedClient);
+        $requester = new \Intelliview\Quickbooks\Http\HttpRequester($mockedClient);
         $requester->request('GET', 'http://mock.com',null,[]);
     }
 }

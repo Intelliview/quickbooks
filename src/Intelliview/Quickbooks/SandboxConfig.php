@@ -1,11 +1,11 @@
 <?php
 
-namespace ActiveCollab\Quickbooks;
+namespace Intelliview\Quickbooks;
 
 /**
  * Description of ProductonConfig
- *
- * @author kristian@intelliview.no
+ * 
+ * @author     Kristian Beres <kristian@intelliview.no>
  */
 class SandboxConfig {
     

@@ -1,17 +1,17 @@
 <?php
 
-namespace ActiveCollab\Quickbooks;
+namespace Intelliview\Quickbooks;
 
 
-use ActiveCollab\Quickbooks\OAuth\LeagueOAuth;
-use ActiveCollab\Quickbooks\Http\HttpRequester;
+use Intelliview\Quickbooks\OAuth\LeagueOAuth;
+use Intelliview\Quickbooks\Http\HttpRequester;
 use Guzzle\Http\Client;
 
 
 /**
  * Class Quickbooks
  *
- * @package ActiveCollab\QUickbooksWrapper
+ * @package Intelliview\QUickbooksWrapper
  */
 class Quickbooks
 {

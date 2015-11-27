@@ -1,9 +1,9 @@
 <?php
 
-namespace ActiveCollab\Quickbooks\OAuth;
+namespace Intelliview\Quickbooks\OAuth;
 
 
-use ActiveCollab\Quickbooks\Config;
+use Intelliview\Quickbooks\Config;
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use League\OAuth1\Client\Server\Server;

@@ -1,6 +1,6 @@
 <?php
 
-namespace ActiveCollab\Quickbooks;
+namespace Intelliview\Quickbooks;
 
 
 class Config

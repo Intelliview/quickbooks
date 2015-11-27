@@ -4,7 +4,7 @@ class QuickbooksTest extends TestCase
 {
     public function testCreateDataService()
     {
-        $dataService = \ActiveCollab\Quickbooks\Quickbooks::getDataService([
+        $dataService = \Intelliview\Quickbooks\Quickbooks::getDataService([
             'consumerKey'       => 'consumer-key',
             'consumerKeySecret' => 'consumer-key-secret',
             'accessToken'       => 'access-token',
@@ -13,17 +13,17 @@ class QuickbooksTest extends TestCase
             'realmId'           => 123456789,
         ]);
 
-        $this->assertInstanceOf('\ActiveCollab\Quickbooks\DataService', $dataService);
+        $this->assertInstanceOf('\Intelliview\Quickbooks\DataService', $dataService);
     }
 
     public function testCreateAuthenticator()
     {
-        $authenticator = \ActiveCollab\Quickbooks\Quickbooks::getAuthenticator([
+        $authenticator = \Intelliview\Quickbooks\Quickbooks::getAuthenticator([
             'consumerKey'       => 'consumer-key',
             'consumerKeySecret' => 'consumer-key-secret',
             'callbackUrl'       => 'callback-url'
         ]);
 
-        $this->assertInstanceOf('\ActiveCollab\Quickbooks\Authenticator', $authenticator);
+        $this->assertInstanceOf('\Intelliview\Quickbooks\Authenticator', $authenticator);
     }
 }

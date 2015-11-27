@@ -29,7 +29,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "ActiveCollab\\Quickbooks\\": "src/ActiveCollab/Quickbooks/"
+                    "Intelliview\\Quickbooks\\": "src/Intelliview/Quickbooks/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

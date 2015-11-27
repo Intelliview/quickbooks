@@ -1,14 +1,14 @@
 <?php
 
-namespace ActiveCollab\Quickbooks;
+namespace Intelliview\Quickbooks;
 
-use ActiveCollab\Quickbooks\Http\HttpRequesterInterface;
-use ActiveCollab\Quickbooks\OAuth\OAuthInterface;
+use Intelliview\Quickbooks\Http\HttpRequesterInterface;
+use Intelliview\Quickbooks\OAuth\OAuthInterface;
 
 /**
  * Class DataService
  *
- * @package ActiveCollab\Quickbooks
+ * @package Intelliview\Quickbooks
  */
 class DataService
 {

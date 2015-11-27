@@ -1,16 +1,16 @@
 <?php
 
-namespace ActiveCollab\Quickbooks\Http;
+namespace Intelliview\Quickbooks\Http;
 
 
-use ActiveCollab\Quickbooks\Exception\ApiRequestException;
+use Intelliview\Quickbooks\Exception\ApiRequestException;
 use Guzzle\Http\Client;
 use Guzzle\Http\Exception\RequestException;
 
 /**
  * Class HttpRequester
  *
- * @package ActiveCollab\Quickbooks\Http
+ * @package Intelliview\Quickbooks\Http
  */
 class HttpRequester implements HttpRequesterInterface
 {

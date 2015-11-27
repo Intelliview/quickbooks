@@ -1,6 +1,6 @@
 <?php
 
-namespace ActiveCollab\Quickbooks\Exception;
+namespace Intelliview\Quickbooks\Exception;
 
 
 class ApiRequestException  extends \Exception {}

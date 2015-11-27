@@ -1,12 +1,12 @@
 <?php
 
-namespace ActiveCollab\Quickbooks\OAuth;
+namespace Intelliview\Quickbooks\OAuth;
 
 
 /**
  * Interface OAuthInterface
  *
- * @package ActiveCollab\Quickbooks\OAuth
+ * @package Intelliview\Quickbooks\OAuth
  */
 interface OAuthInterface
 {
