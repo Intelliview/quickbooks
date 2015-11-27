@@ -1,5 +1,5 @@
 {
-  "name": "activecollab/qbo-wrapper",
+  "name": "intelliview/qbo-wrapper",
   "description": "Fork of Activecolab Quickbooks online API wrapper",
   "license": "MIT",
   "require": {
