@@ -1,6 +1,6 @@
 {
   "name": "activecollab/qbo-wrapper",
-  "description": "Quickbooks online API wrapper",
+  "description": "Fork of Activecolab Quickbooks online API wrapper",
   "license": "MIT",
   "require": {
     "league/oauth1-client": "~1.0"
