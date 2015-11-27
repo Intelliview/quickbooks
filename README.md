@@ -21,7 +21,7 @@
         'accessTokenSecret' => 'example-access-token-secret',
         'callbackUrl'       => 'http://example.com',
         'realmId'           => 123456789,
-        'serviceConfig'    => new \ActiveCollab\Quickbooks\SandboxConfig()
+        'serviceConfig'    => new \ActiveCollab\Quickbooks\SandboxConfig() // SandboxConfig() || ProductionConfig()
     ]);
 
     $allData = $dataService->query("SELECT * FROM Invoice");
