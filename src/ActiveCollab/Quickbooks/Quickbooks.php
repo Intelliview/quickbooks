@@ -52,6 +52,6 @@ class Quickbooks
             new Client()
         );
 
-        return new DataService($oauthClient,$httpClient,$config['accessToken'],$config['accessTokenSecret'],$config['realmId'], $config['service-config']);
+        return new DataService($oauthClient,$httpClient,$config['accessToken'],$config['accessTokenSecret'],$config['realmId'], $config['serviceConfig']);
     }
 }
