@@ -7,17 +7,13 @@ namespace Intelliview\Quickbooks;
  *
  * @author     Kristian Beres <kristian@intelliview.no>
  */
-class ProductonConfig {
+class ProductonConfig extends QboConfig{
     
-    protected static $apiVersion = 3;
-    protected static $apiUrl     = 'https://quickbooks.api.intuit.com';
-    
-    public function getApiVersion() {
-        return self::$apiVersion;
-    }
-
+    protected $apiVersion = 3;
+    protected $apiUrl     = 'https://quickbooks.api.intuit.com';
+        
     public function getApiUrl() {
-        return self::$apiUrl;
+        return $this->apiUrl;
     }
     
 }

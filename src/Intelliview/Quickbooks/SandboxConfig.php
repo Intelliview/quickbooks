@@ -7,17 +7,13 @@ namespace Intelliview\Quickbooks;
  * 
  * @author     Kristian Beres <kristian@intelliview.no>
  */
-class SandboxConfig {
+class SandboxConfig extends QboConfig{
     
-    protected static $apiVersion = 3;
-    protected static $apiUrl     = 'https://sandbox-quickbooks.api.intuit.com';
+    protected $apiVersion = 3;
+    protected $apiUrl     = 'https://sandbox-quickbooks.api.intuit.com';
     
-    public function getApiVersion() {
-        return self::$apiVersion;
-    }
-
     public function getApiUrl() {
-        return self::$apiUrl;
+        return $this->apiUrl;
     }
     
 }

@@ -37,9 +37,12 @@ class DataService
      */
     protected $accessTokenSecret;
     
+    /**
+     * @var \Intelliview\Quickbooks\QboConfig
+     */
     protected $config;
    
-    function __construct(OAuthInterface $oauth, HttpRequesterInterface $requester, $accessToken, $accessTokenSecret, $realmId, $config)
+    function __construct(OAuthInterface $oauth, HttpRequesterInterface $requester, $accessToken, $accessTokenSecret, $realmId, \Intelliview\Quickbooks\QboConfig $config)
     {
         $this->oauth             = $oauth;
         $this->requester         = $requester;
@@ -150,6 +153,14 @@ class DataService
         }
         return $this->makeCall('GET',$this->buildUrl('/reports/TransactionList'.$str));
         
+    }
+
+    public function reconnect(){
+        return $this->makeCall('GET', $this->config->getApiUrlReconnect());
+    }
+
+    public function disconnect(){
+        return $this->makeCall('GET', $this->config->getApiUrlDisconnect());
     }
     
 }
