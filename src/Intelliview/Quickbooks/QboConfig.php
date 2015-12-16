@@ -24,4 +24,5 @@ abstract class QboConfig {
     public function getApiUrlDisconnect() {
         return $this->apiUrlDisconnect;
     }
+}
  
