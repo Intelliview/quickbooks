@@ -140,7 +140,15 @@ class DataService
      * @return array
      */
     public function transactionList($params){
-                
+        return $this->report('TransactionList', $params);
+    }
+    
+    
+    public function generalLedger($params){
+        return $this->report('GeneralLedger', $params);
+    }
+    
+    public function report($entityName, $params){
         $str = '?';
         if(count($params) > 0){
             foreach($params as $k=>$v){
@@ -151,10 +159,10 @@ class DataService
                 }
             }
         }
-        return $this->makeCall('GET',$this->buildUrl('/reports/TransactionList'.$str));
         
+        return $this->makeCall('GET',$this->buildUrl('/reports/'.$entityName.$str));
     }
-
+    
     public function reconnect(){
         return $this->makeCall('GET', $this->config->getApiUrlReconnect());
     }
